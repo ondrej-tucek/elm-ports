@@ -1,0 +1,34 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+// can add Boostrap overrides, additional Sass/CSS below...
+
+#body-container {
+    display: flex;
+}
+
+$width-graph: 320px;
+$hight-graph: 240px;
+$border-graphs-size-line: 2px;
+
+.graphs {
+    // display: flex;
+    width: $width-graph + 2*$border-graphs-size-line;
+    height: $hight-graph + 2*$border-graphs-size-line;
+    margin: 30px 50px auto;
+    border: $border-graphs-size-line solid black;
+}
+
+
+#lineGraph1 {
+    width: $width-graph;
+    height: $hight-graph;
+}
+
+
+#barGraph1 {
+    width: $width-graph;
+    height: $hight-graph;
+}
+
